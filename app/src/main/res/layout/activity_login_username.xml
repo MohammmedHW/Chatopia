@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:weightSum="100"
+    tools:context=".LoginOTP"
+    >
+
+    <!-- Content 1: Circles -->
+    <LinearLayout
+        android:id="@+id/text_circle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Circle 1 -->
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/circle_bg"
+            android:backgroundTint="@color/lightgrey">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+
+        <!-- Circle 2 -->
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/circle_bg"
+            android:backgroundTint="@color/lightgrey"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="@string/_2"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <!-- Circle 3 -->
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/circle_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="@string/_3"
+                android:gravity="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Content 2: Image -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img"
+        tools:ignore="MissingConstraints"
+        android:layout_weight="20"/>
+
+    <!-- Content 3: Enter Mobile Number TextView -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_username"
+        android:layout_gravity="center_vertical"
+        android:letterSpacing="0.08"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_weight="5"/>
+
+    <!-- Content 4: Country Code Picker and EditText -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5">
+
+
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:background="@drawable/round_text" />
+
+    </LinearLayout>
+
+    <!-- Content 5: Button and ProgressBar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/login_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:text="Finish"
+            android:backgroundTint="@color/primary" />
+
+        <!-- ProgressBar -->
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "886011553158",
+    "project_id": "chatopia-backend",
+    "storage_bucket": "chatopia-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886011553158:android:b886723ef35bd30fed7807",
+        "android_client_info": {
+          "package_name": "com.example.chatopia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJUrpYuo3eSmXVAWYqefd5DchBvWKb8xw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
